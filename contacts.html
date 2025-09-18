@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./js/bootstrap.min.js" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+      <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+      <div class="col-2">
+          <nav class="sidebar d-flex flex-column p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" width="30" height="24" aria-current="true" class="d-inline-block align-text-top">
+                  Меню
+                </a>
+            </div>
+            <ul class="nav nav-pills flex-column mb-4">
+              <li class="nav-item mb-2">
+                  <i class="fa fa-home">
+                      <a href="main.html" class="link">Главная</a>
+                  </i>
+              </li>
+              <li class="nav-item mb-2">
+                  <i class="fa fa-folder-o">
+                      <a href="categories.html" class="link">Категории</a>
+                  </i>
+              </li>
+              <li class="nav-item mb-2">
+                  <i class="fa fa-calendar">
+                      <a href="orders.html" class="link">Заказы</a>
+                  </i>
+              </li>
+              <li class="nav-item mb-2">
+                  <i class="fa fa-address-book-o">
+                      <a href="contacts.html" class="link">Контакты</a>
+                  </i>
+              </li>
+            </ul>
+                <div class="dropdown">
+                    <i class="fa fa-user"></i>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Пользователь
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                  </ul>
+                </div>
+          </nav>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-8">
+          <div class="row" id="contacts">
+              <h2 class="table">Контакты</h2>
+              <div class="col-5">
+                  <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Почта</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+              </div>
+              <div class="col-7">
+                  <h4>Наши контакты</h4>
+                      <div class="col-6">
+                          <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing eil, sed do elusmod
+                            tempor incididunt ut labore et dolore magna aliqua, enim ad minim
+                            veniam, quis nostrud exercitation ultamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute inure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt molit anim id
+                            est laborum.<br>
+                            <br>While these feedback styles cannot be styled with CSS, you can still
+                            customize the feedback text through JavaScript.
+                          </p>
+                      </div>
+              </div>
+          </div>
+      </div>
+  <script type="module">
+  import { Toast } from 'bootstrap.esm.min.js'
+  Array.from(document.querySelectorAll('.toast'))
+    .forEach(toastNode => new Toast(toastNode))
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
+  <script src="https://code.jquery.com/jquery-3.x.x.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.x.x/js/bootstrap.min.js"></script>
+  </body>
+</html>
