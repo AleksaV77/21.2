@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./js/bootstrap.min.js" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+      <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+      <div class="col-2">
+          <nav class="sidebar d-flex flex-column p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" width="30" height="24" aria-current="true" class="d-inline-block align-text-top">
+                  Меню
+                </a>
+            </div>
+            <ul class="nav nav-pills flex-column mb-4">
+              <li class="nav-item mb-2">
+                  <i class="fa fa-home">
+                      <a href="main.html" class="link">Главная</a>
+                  </i>
+              </li>
+              <li class="nav-item mb-2">
+                  <i class="fa fa-folder-o">
+                      <a href="categories.html" class="link">Категории</a>
+                  </i>
+              </li>
+              <li class="nav-item mb-2">
+                  <i class="fa fa-calendar">
+                      <a href="orders.html" class="link">Заказы</a>
+                  </i>
+              </li>
+              <li class="nav-item mb-2">
+                  <i class="fa fa-address-book-o">
+                      <a href="contacts.html" class="link">Контакты</a>
+                  </i>
+              </li>
+            </ul>
+                <div class="dropdown">
+                    <i class="fa fa-user"></i>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Пользователь
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                  </ul>
+                </div>
+          </nav>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-8">
+          <div class="row">
+          <div>
+              <h2 class="table" id="catalog">Каталог</h2>
+          </div>
+          <div class="col-9">
+              <div class="card">
+                  <img src="i.webp" class="card-img-top" alt="Thumbnail">
+                  <div class="card-body">
+                    <p class="card-text-2">This is a wider card with supporting text belowasa
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                    </p>
+                      <div class="btn-catalog">
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-primary-2">View</button>
+                              <button type="button" class="btn btn-primary-2">Edit</button>
+                          </div>
+                          <p class="card-text"><small class="text-body-secondary">9 mins</small></p>
+                      </div>
+                  </div>
+                </div>
+              <div class="card">
+                  <img src="i.webp" class="card-img-top" alt="Thumbnail">
+                  <div class="card-body">
+                    <p class="card-text-2">This is a wider card with supporting text belowasa
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                    </p>
+                    <div class="btn-catalog">
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-primary-2">View</button>
+                              <button type="button" class="btn btn-primary-2">Edit</button>
+                          </div>
+                          <p class="card-text"><small class="text-body-secondary">9 mins</small></p>
+                      </div>
+                  </div>
+                </div>
+              <div class="card">
+                  <img src="i.webp" class="card-img-top" alt="Thumbnail">
+                  <div class="card-body">
+                    <p class="card-text-2">This is a wider card with supporting text belowasa
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                    </p>
+                    <div class="btn-catalog">
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-primary-2">View</button>
+                              <button type="button" class="btn btn-primary-2">Edit</button>
+                          </div>
+                          <p class="card-text"><small class="text-body-secondary">9 mins</small></p>
+                      </div>
+                  </div>
+                </div>
+              <div class="card">
+                  <img src="i.webp" class="card-img-top" alt="Thumbnail">
+                  <div class="card-body">
+                    <p class="card-text-2">This is a wider card with supporting text belowasa
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                    </p>
+                    <div class="btn-catalog">
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-primary-2">View</button>
+                              <button type="button" class="btn btn-primary-2">Edit</button>
+                          </div>
+                          <p class="card-text"><small class="text-body-secondary">9 mins</small></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+  </div>
+  <script type="module">
+  import { Toast } from 'bootstrap.esm.min.js'
+  Array.from(document.querySelectorAll('.toast'))
+    .forEach(toastNode => new Toast(toastNode))
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
+  <script src="https://code.jquery.com/jquery-3.x.x.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.x.x/js/bootstrap.min.js"></script>
+  </body>
+</html>

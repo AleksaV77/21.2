@@ -1,0 +1,203 @@
+body {
+          font-family: 'bootstrap-icons';
+          margin: 0;
+          display: flex;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .h3, h3 {
+            font-size: 14px;
+        }
+        .h5, h5 {
+            font-size: 20px;
+        }
+        .p-3 {
+            padding: 0rem !important;;
+        }
+        .table {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .col-3 {
+            flex: 1;
+            width: 33.33%;
+        }
+        .navbar-brand{
+            color: #fff;
+            font-size: 25px;
+        }
+        .container-fluid{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #aaa;
+        }
+        .sidebar {
+          flex: 0 0 auto;
+          background-color: #000000d4;
+          height: 100vh;
+        }
+        .sidebar .nav-link {
+          color: #fff;
+          margin-left: 25px;
+        }
+        .mb-2 {
+            margin-top: 10px;
+        }
+        .mb-4 {
+            padding-bottom: 670px;
+            border-bottom: 1px solid #aaa;
+            padding-left: 40px;
+            margin-top: 10px;
+        }
+        .link {
+             color: #fff;
+             margin-left: 5px;
+             font-size: 18px;
+        }
+        .dropdown {
+            height: 7vh;
+            padding-left: 28px;
+            padding-top: 8px;
+            padding-right: 17px;
+            position: fixed;
+            bottom: 0;
+        }
+        .fa-user {
+          font-size: 25px;
+          margin-left: 5px;
+        }
+        i {
+            color: white;
+        }
+        .align-text-top {
+            margin-top: 5px;
+        }
+        .dropdown-toggle {
+            font-size: 17px;
+            background-color: transparent;
+        }
+        .dropdown-toggle{
+            margin-bottom: 10px;
+        }
+          .card {
+          text-align: center;
+        }
+          .card-title {
+            font-weight: bold;
+        }
+          .btn-primary {
+            color: #000;
+            background-color: #5833b7;
+            border-color: #5833b7;
+            background-color: rgba(0, 0, 0, .0001);
+            width: 100%;
+        }
+        .btn-primary-2 {
+            color: #000;
+            background-color: #5833b7;
+            border-color: #5833b7;
+            background-color: rgba(0, 0, 0, .0001);
+            width: 30%;
+        }
+        .btn-catalog {
+            width: 115px;
+            padding-top: 15px;
+        }
+        .text-body-secondary {
+            position: absolute;
+            right: 0;
+            padding-right: 5px;
+        }
+        .card-text {
+            text-align: center;
+            margin: 0 0 10px;
+        }
+        .card-text-2 {
+            text-align: left;
+            margin: 0 0 10px;
+        }
+        .btn-primary-2 {
+            padding: 5px;
+            font-size: 10px;
+        }
+        .btn-group, .btn-group-vertical {
+            display: contents;
+        }
+        a.navbar-brand:hover {
+            color: #5833b7;
+        }
+        a.link:hover {
+            color: #5833b7;
+        }
+        a.dropdown-toggle:hover {
+            background-color: #5833b7;
+        }
+        .btn-danger {
+            color: #fff;
+            border-color: #5833b700;
+        }
+        .btn-primary:hover {
+            color: white;
+            background-color: #5833b7;
+            border-color: #5833b7;
+        }
+        .btn-danger:hover {
+            color: #fff;
+            background-color: #5833b7;
+            border-color: #5833b7;
+        }
+        .btn-danger:focus {
+            color: #fff;
+            background-color: #5833b7;
+            border-color: #5833b7;
+        }
+        .row {
+            margin-bottom: 50px;
+            margin-right: 0px;
+            margin-left: -15px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card-img, .card-img-bottom, .card-img-top {
+            width: 100%;
+        }
+        .col-6 {
+            width: 100%;
+        }
+        .col-7 {
+            font-size: 12px;
+            padding-left: 70px;
+            padding-top: 40px;
+        }
+        .col-8 {
+            margin-top: 50px;
+        }
+        .catalog {
+            margin-top: 400px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .col-9 {
+            width: 90%;
+            margin-left: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .card {
+            margin: 20px;
+            width: 30rem;
+            flex-basis: 32%;
+        }
+        .h4, h4 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .col-5 {
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #00000047;
+            flex: 0 0 auto;
+            width: 41.66666667%;
+        }
