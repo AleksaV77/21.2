@@ -136,11 +136,15 @@
               </div>
           </div>
       </div>
-  <script type="module">
-  import { Toast } from 'bootstrap.esm.min.js'
-  Array.from(document.querySelectorAll('.toast'))
-    .forEach(toastNode => new Toast(toastNode))
-</script>
+      <script type="module">
+        import { Toast } from './js/bootstrap.esm.js'
+        let toastElement = document.getElementById("toast");
+        let toast = new Toast(toastElement);
+        let buttonElement = document.getElementById("button");
+        buttonElement.addEventListener("click", ()=> {
+            toast.show();
+        });
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
 </script>
   <script src="https://code.jquery.com/jquery-3.x.x.min.js"></script>
