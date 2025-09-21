@@ -4,46 +4,104 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="./js/bootstrap.min.js" rel="stylesheet"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
       <link href="style.css" rel="stylesheet"/>
   </head>
+  <style>
+      body {
+          font-family: 'bootstrap-icons';
+          margin: 0;
+          display: flex;
+        }
+        .h4, h4 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+      .link {
+             color: #fff;
+             margin-left: 5px;
+             font-size: 18px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+      .sidebar .nav-link {
+          color: #fff;
+          margin-left: 25px;
+        }
+      .btn-danger {
+            color: #fff;
+            border-color: #5833b700;
+        }
+      .table {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+      .dropdown-toggle {
+            font-size: 17px;
+            background-color: transparent;
+            margin-bottom: 10px;
+            background-color: #5833b7;
+        }
+      .btn-primary {
+            color: #000;
+            background-color: #5833b7;
+            border-color: #5833b7;
+            background-color: rgba(0, 0, 0, .0001);
+            width: 100%;
+        }
+      .container-fluid{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #aaa;
+        }
+      .btn-danger:hover {
+            color: #fff;
+            background-color: #5833b7;
+            border-color: #5833b7;
+        }
+      .btn-danger:focus {
+            color: #fff;
+            background-color: #5833b7;
+            border-color: #5833b7;
+        }
+  </style>
   <body>
       <div class="col-2">
-          <nav class="sidebar d-flex flex-column p-3">
+          <nav class="sidebar d-flex flex-column p-3" style="flex: 0 0 auto; background-color: #000000d4; height: 100vh;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#" style="color: #fff; font-size: 25px;">
                   <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" width="30" height="24" aria-current="true" class="d-inline-block align-text-top">
                   Меню
                 </a>
             </div>
-            <ul class="nav nav-pills flex-column mb-4">
-              <li class="nav-item mb-2">
-                  <i class="fa fa-home">
+            <ul class="nav nav-pills flex-column mb-4" style="padding-bottom: 670px; border-bottom: 1px solid #aaa; padding-left: 40px; margin-top: 10px;">
+              <li class="nav-item mb-2" style="margin-top: 10px;">
+                  <i class="fa fa-home" style="color: white;">
                       <a href="main.html" class="link">Главная</a>
                   </i>
               </li>
-              <li class="nav-item mb-2">
-                  <i class="fa fa-folder-o">
+              <li class="nav-item mb-2" style="margin-top: 10px;">
+                  <i class="fa fa-folder-o" style="color: white;">
                       <a href="categories.html" class="link">Категории</a>
                   </i>
               </li>
-              <li class="nav-item mb-2">
-                  <i class="fa fa-calendar">
+              <li class="nav-item mb-2" style="margin-top: 10px;">
+                  <i class="fa fa-calendar" style="color: white;">
                       <a href="orders.html" class="link">Заказы</a>
                   </i>
               </li>
-              <li class="nav-item mb-2">
-                  <i class="fa fa-address-book-o">
+              <li class="nav-item mb-2" style="margin-top: 10px;">
+                  <i class="fa fa-address-book-o" style="color: white;">
                       <a href="contacts.html" class="link">Контакты</a>
                   </i>
               </li>
             </ul>
-                <div class="dropdown">
-                    <i class="fa fa-user"></i>
+                <div class="dropdown" style="height: 7vh; padding-left: 28px; padding-top: 8px; padding-right: 17px; position: fixed; bottom: 0;">
+                    <i class="fa fa-user" style="font-size: 25px; margin-left: 5px; color: white;"></i>
                     <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Пользователь
                   </button>
@@ -55,10 +113,10 @@
           </nav>
       </div>
       <div class="col-1"></div>
-      <div class="col-8">
-          <div class="row" id="contacts">
+      <div class="col-8" style="margin-top: 50px;">
+          <div class="row" style="margin-bottom: 50px; margin-right: 0px; margin-left: -15px; display: flex; justify-content: space-evenly;">
               <h2 class="table">Контакты</h2>
-              <div class="col-5">
+              <div class="col-5" style="padding: 15px; border-radius: 5px; border: 1px solid #00000047; flex: 0 0 auto; width: 41.66666667%;">
                   <form>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Имя</label>
@@ -75,9 +133,9 @@
                   <button type="submit" class="btn btn-primary">Отправить</button>
                 </form>
               </div>
-              <div class="col-7">
+              <div class="col-7" style="font-size: 12px; padding-left: 70px; padding-top: 40px;">
                   <h4>Наши контакты</h4>
-                      <div class="col-6">
+                      <div class="col-6" style="width: 100%;">
                           <p>Lorem ipsum dolor sit amet,
                             consectetur adipiscing eil, sed do elusmod
                             tempor incididunt ut labore et dolore magna aliqua, enim ad minim
@@ -93,11 +151,18 @@
               </div>
           </div>
       </div>
+      <div class="col-1"></div>
   <script type="module">
-  import { Toast } from 'bootstrap.esm.min.js'
-  Array.from(document.querySelectorAll('.toast'))
-    .forEach(toastNode => new Toast(toastNode))
-</script>
+        import { Toast } from './js/bootstrap.esm.js'
+
+        let toastElement = document.getElementById("toast");
+        let toast = new Toast(toastElement);
+
+        let buttonElement = document.getElementById("button");
+        buttonElement.addEventListener("click", ()=> {
+            toast.show();
+        });
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
 </script>
   <script src="https://code.jquery.com/jquery-3.x.x.min.js"></script>
